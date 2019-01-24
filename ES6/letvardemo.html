@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+  
+  var m= 100; //Global Variable 
+  document.write(m);
+
+function f1(){
+
+var p =200; // Function Level
+
+for(var i=1;i<=10;i++) // Also Function Level
+{
+document.write("<h1>I = "+ i +"</h1>");
+}
+
+document.write("<h2> Value Of global m : " + m +"</h2>");
+document.write("<h2> value Of function Level p :" + p+"</h2>");
+document.write("<h2>value Of var After Loop :" + i+ "</h2>");
+
+}
+
+
+function f2()
+{
+var q= 300;
+for(let j=1;j<=10;j++)
+{
+document.write("<h1>"+ j +"</h1>");
+}
+document.write("<h2> Value Of global m : " + m +"</h2>");
+
+// String Interpolation 
+
+document.write(`<h1> value of M = ${m}`);
+document.write("<h2>value Of let After Loop :" + j + "</h2>");
+
+
+
+
+}
+
+f1();
+f2()
+
+
+</Script>
+</head>
+<body>
+</body>
+</html>

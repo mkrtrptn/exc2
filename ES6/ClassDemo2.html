@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		class employee
+		{
+         	constructor()
+         	{
+         		this.id =200;
+         		this.designation="gm";
+         	}
+
+	        setdetail(id1 ,dest)
+	        {
+	        	this.id =id1;
+	        	this.designation = dest;
+
+	        }
+
+	        getdetail()
+	        {
+	        	console.log("Id Is : - "  + this.id + "designation"  + this.designation);
+	        
+	        	document.write("Id Is : - "  + this.id + "designation"  + this.designation);
+
+	        }
+
+	       var ob = new employee();
+	       setdetail(401,"Gm")
+	       ob.getdetail();
+
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+//import { pi,Display ,student} from "./module1";
+var NS1 = require("./module1");
+var NS2 = require("./module2");
+console.log(NS1.pi);
+console.log(NS2.name);
+NS1.Display();
+NS2.Display();
+var obj = new NS1.student();
+obj.DisplayStudent();
+var obj2 = new NS2.student();
+obj2.DisplayStudent();
