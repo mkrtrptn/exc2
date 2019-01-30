@@ -1,0 +1,28 @@
+<br>
+<br>
+<br>
+<br>
+<div style="background-color:yellow;color: darkslategrey">
+
+  <ul>
+    <li *ngFor = "let n of courses;
+                  let iseven=even;
+                  let isodd=odd ;
+                  let isFirst=first;
+                  let isLast=last;
+                  let isIndex=index" >
+               
+    <span style="color: darkgreen"  *ngIf="iseven">
+      {{n}}
+    </span>
+    
+  <span style="color:red"  *ngIf="isodd">
+      {{n}}
+    </span>
+    
+    </li>
+     
+  </ul>
+
+  <br><br><br><br><br><br>
+</div>

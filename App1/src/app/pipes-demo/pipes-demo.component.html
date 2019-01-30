@@ -1,0 +1,17 @@
+
+
+<div style="font-size:x-large;background-color: yellow;margin: 10px;padding: 20px ; border:5px solid tomato;box-shadow:10px sienna">
+Name : {{einfo.name|titlecase}} <br>
+Name : {{einfo.name|uppercase}}<br>
+job  : {{einfo.job|lowercase}}<br>
+Salary:{{einfo.sal|currency:"EURO":true}}<br>
+Slice :{{einfo.job|slice:0:4}}<br>
+Da :   {{einfo.da|number:"1.2-2"}}<br>
+Percentage Of Sal {{(einfo.sal/einfo.da)|percent}} <br>
+DOJ : {{einfo.doj|date:"EEE,MMM dd/MM/y" | uppercase }} <br>
+Product Info {{pinfo|json}}<br><br><br>
+
+
+Reverse : {{einfo.name|reverse}}
+
+</div>

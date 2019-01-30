@@ -1,0 +1,44 @@
+<form [formGroup] = "myform" (ngSubmit) ="register()">
+
+  <br><br><br>
+<div class="div1">
+  <br><br><br>
+
+ First Name : <input formControlName="firstname">
+<span *ngIf = "myform.controls.firstname.invalid" class="span1">
+  Enter First Name ! 
+</span>
+
+<br><br>
+
+Last Name :  <input formControlName="lastname"  >
+<span *ngIf="myform.controls.lastname.invalid" class="span1">
+  Enter Last Name !
+</span>
+
+<br><br>
+
+Email :     <input formControlName="emailid">
+<span *ngIf="myform.controls.emailid.invalid" class="span1">
+  Enter Valid Email !
+</span>
+
+<br><br>
+
+Phone :     <input formControlName="phone">
+<span *ngIf="myform.controls.phone.touched && myform.controls.phone.invalid " class="span1">
+Enter Valid Mobile Number !
+</span>
+
+<br><br>
+<input type="submit" value="Submit Data" >
+
+{{myform.value | json}}
+
+<br><br>
+
+<span class="span1"> Detail Provided : {{msg}} </span>
+</div>
+
+
+</form>

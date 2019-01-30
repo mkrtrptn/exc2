@@ -1,0 +1,19 @@
+<div style="font-size:x-large;background-color: cornsilk;color: black">
+<table class="form-control">
+  <tr>
+      Product Id <input matInput [(ngModel)]="pinfo.prodid">&nbsp;&nbsp;
+      <button mat-raised-button color="primary" (click) = "search()">Search </button><br>
+  </tr>
+  <tr>
+      Product Description <input matInput [(ngModel)] ="pinfo.proddesc">
+  </tr>
+  <tr>
+      Product Price <input matInput [(ngModel)] = "pinfo.prodprice"><br>
+  </tr>
+  <tr>
+      <button mat-raised-button color="primary" (click)="modify()" >Update</button> &nbsp;
+      <button mat-raised-button color="warn" (click)="delete()">Delete</button>
+  </tr>
+</table>
+
+</div>

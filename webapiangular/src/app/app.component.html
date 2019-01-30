@@ -1,0 +1,26 @@
+<div style="background-color:cadetblue;color:white;font-size:x-large;width:100%;height:40%">
+
+<mat-toolbar color="priamry">
+<mat-toolbar-row>
+<a mat-button routerLink="about">About</a>
+<a mat-button routerLink="login">Login</a>
+
+<a mat-button routerLink="tutorials">Tutorials</a>
+<a mat-button routerLink="books">Books</a> &nbsp;&nbsp;&nbsp;
+
+
+<!--Lazy Loading Additional Componenets -->
+
+<a  mat-button routerLink="./resources/tutorials">(LL)Tutorials </a>
+<a  mat-button routerLink="./resources/books">(LL)Books</a>
+
+</mat-toolbar-row>
+</mat-toolbar>   
+<hr>
+
+<hr>
+
+
+
+<router-outlet></router-outlet>  
+</div>

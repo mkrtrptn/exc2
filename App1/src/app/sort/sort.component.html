@@ -1,0 +1,12 @@
+<table style="background-color:bisque;font-size: x-large;box-shadow: black 5px" border="1">
+<tr>
+  <th><a href="#" (click) = "sortdata('pid')">Product ID</a>  </th>
+  <th><a href="#" (click) = "sortdat('name')">Product Name</a></th>
+  <th><a href="#" (click) = "sortdata('price')">Price </a> </th>
+</tr>
+<tr *ngFor="let i of prods">
+  <td>{{i.pid}}</td>
+  <td>{{i.name}}</td>
+  <td>{{i.price}}</td>
+</tr>
+</table> 

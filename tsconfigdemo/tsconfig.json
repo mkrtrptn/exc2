@@ -1,0 +1,17 @@
+{
+
+//"compileOnSave":true,
+"compilerOptions":{
+
+    "target":"es5",
+    "removeComments":true,
+    "sourceMap":false,
+    "outDir":"Scripts",
+   // "outFile":"newfile.js"
+},
+
+//"files":["file1.ts","file2.ts"],
+//"exclude":["file3.ts"],
+//"include":["file4.ts"]
+
+}

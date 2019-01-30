@@ -1,0 +1,74 @@
+<form [formGroup]="myform">
+    <br><br><br>
+
+<div class="div1">
+    <br><br><br>
+
+
+Enter Username : <input formControlName="username">
+<span *ngIf="myform.controls.username.hasError('required')" class="span1">
+Enter Username !
+</span>
+<span *ngIf="myform.controls.username.hasError('pattern')" class="span1">
+  Enter Username Between A-Z/a-z and 8 Chars !
+</span>
+<br>
+
+Enter Password   :  <input formControlName="password" type="password">
+<span *ngIf="myform.controls.password.invalid" class="span1">
+  Enter password !
+</span>
+<br>
+
+Gender :      <input  type="radio" value="Male" name="gender" formControlName="gender" >
+<input type="radio" value="Female" name="gender" formControlName="gender"> 
+<span *ngIf="myform.controls.gender.invalid" class="span1">
+  Select Gender !
+</span>
+<br>
+
+
+Age : <input formControlName="age" >
+<span *ngIf="myform.controls.age.hasError('required')" class="span1">
+  Enter Age !
+</span>
+<br>
+<span *ngIf="myform.controls.age.hasError('pattern')" class="span1">
+  Enter Age Between 20 - 45 
+</span>
+<br>
+
+Phone : <input formControlName="phone">
+<span *ngIf="myform.controls.phone.hasError('required')" class="span1">
+  Enter Phone Number !
+</span>
+<span *ngIf="myform.controls.phone.hasError('pattern')" class="span1">
+  Mobile Number Should be 10 digit and Numbers Only ! 
+</span>
+<br>
+
+City : <input formControlName="city">
+<span *ngIf="myform.controls.city.invalid" class="span1">
+City Name Should Be in range 3 - 10 alphabets !
+</span>
+<br>
+
+Select Country : <select formControlName="country">
+  <option value="">--Select Country-- </option>
+  <option value="IND">India</option>
+  <option value="USA">USA</option>
+  <option value="UK">UK</option>
+</select>
+<span *ngIf="myform.controls.country.invalid" class="span1">
+  Select Country  !
+</span>
+<br>
+
+<input type="button" value="Register" (click)="register()" [disabled]="myform.invalid">
+
+Detailed Record In Json : {{myform.value | json }}
+<br><br>
+Record Fetched : {{msg}}
+
+</div>
+</form>

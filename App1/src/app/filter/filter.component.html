@@ -1,0 +1,17 @@
+<diV style="background-color: yellow;margin: 10px;padding: 20px;box-shadow:tomato">
+
+  <input type="text" (input)="filterdata($event.target.value)" >
+
+  <table *ngIf="products.length > 0" style="border: 5px solid;border-color: black;">
+<tr>
+  <th>NAME</th>
+  <th>ID</th>
+  <th>PRICE</th>
+</tr>
+<tr *ngFor="let p of products">
+<td>{{p.pid}}</td>
+<td>{{p.name}}</td>
+<td>{{p.price}}</td>
+</tr>
+</table>
+</diV>

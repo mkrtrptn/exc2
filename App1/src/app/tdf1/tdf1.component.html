@@ -1,0 +1,33 @@
+<form #myform="ngForm">
+ <br><br><br>
+
+<div Class="div1">
+    <br><br><br>
+
+  First Name : <input name="firstname"  [(ngModel)]="firstname" required >
+<span *ngIf="myform.controls.firstname.invalid">
+  Enter Name !
+</span> 
+
+<br><br>
+
+Last Name : <input name="lastname" [(ngModel)] = "lastname" required >
+<span *ngIf="myform.controls.lastname.invalid" >
+  Enter Last Name !
+</span>
+<br><br>
+Email : <input name="email" [(ngModel)]="email" email >
+
+<span *ngIf="myform.controls.email.invalid" >
+ 
+</span>
+<br><br>
+
+<input type="button" value="Submit" (click)="register(myform)" >
+<br><br><br>
+{{msg}}
+
+</div>
+
+
+</form>

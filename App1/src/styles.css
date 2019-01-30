@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.div1
+{
+background-color: yellow;
+color: black;
+border: 2px;
+border-style: solid;
+box-shadow: 2px;
+margin: 5px;
+padding: 5px;
+}
+
+.span1
+{
+    color:red;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    ;
+    font-size: large;
+}

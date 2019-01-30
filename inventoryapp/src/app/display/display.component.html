@@ -1,0 +1,25 @@
+<div style="font-size:x-large;color:black;background-color:ghostwhite;margin:10px">
+
+<h1> All Records </h1>
+<table style="font-size:x-large;color: maroon;background-color: linen" border="1px solid">
+  <tr>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+  </tr>
+  <tr *ngFor="let i of prodarray">
+    
+    <td>{{i.pid}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.price}}</td>
+    
+    <td>
+      <a [routerLink] = "['/details' ,i.pid ]"  >  Details </a>
+    </td>
+
+
+  </tr>
+
+</table>
+
+</div>

@@ -1,0 +1,26 @@
+
+<form   [formGroup]="myform">
+  <div style="background-color:Yellow;color:black;font-size:x-large;margin:20px;width:50%;border: chartreuse solid 10px;border-spacing:50px">
+    
+    Username : <input formControlName="username">
+    <span *ngIf="myform.controls.username.invalid">
+      Enter Username
+    </span> 
+    <br>
+
+   Password :<input formControlName="password">
+   <span *ngIf="myform.controls.password.invalid">
+  Enter Password .   
+  </span>
+  
+  <br>
+<button mat-raised-button color="primary" (click)="authenticate()">Login</button><br>
+
+{{msg}}
+
+
+
+</div>
+
+
+</form>

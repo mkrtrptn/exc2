@@ -1,0 +1,36 @@
+<div  style="background-color: yellow;color: black;font-size:large">
+  <br>
+  <br>
+  Enter NO :<input  type=number [(ngModel)] ="n" >
+  <span *ngIf="n%2==0; then template1 else template2">
+  </span>
+
+<ng-template #template1 >
+  {{n}} : Is Even number
+</ng-template>
+
+<ng-template #template2 > {{n}} : Is Odd Number 
+</ng-template>
+
+<br>
+<br>
+</div>
+
+<hr>
+<button style="background-color:chartreuse ;color: black;font-size:large;border:5px" (click)="toggle()" >
+{{flag? 'Hide':'Show'}} Product Detail .
+</button>
+
+<div style="background-color: yellow;color: black;font-size:large;border:10px;border-style: dashed yellow"  *ngIf="flag">
+<br>
+<br>
+Product Id : 1004 <br>
+Product Name : Penguine<br>
+Preview :<br><br>
+<img src="./assets/Penguins.jpg"  height="100" width="200" style="border-style: outset;border-color: darkblue">
+<br>
+<br><br>
+<br>
+<br>
+<br>
+</div>

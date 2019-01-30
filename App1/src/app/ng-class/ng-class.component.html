@@ -1,0 +1,35 @@
+<style>
+.c1{
+  background-color:seagreen;
+  font-size: 200px;
+}
+
+.c2{
+  background-color:yellow;
+  color:darkblue;
+  font-size: 200px;
+}
+
+.c3{
+  background-color: black;
+  color: white;
+  font-size: 200px;
+}
+
+
+</style>
+
+
+<div style="font-size: x-large;background-color: darkslategrey" >
+    <br><br><br>
+<input type=number [(ngModel)] = "num1"><br>
+<input type=number [(ngModel)] = "num2"><br><br>
+
+<input type="button" value="Add" (click)="add()"><br><br>
+<input type="button" value="Mul" (click) ="mul()"><br><br>
+
+<span [ngClass]="lookclass">{{result}}</span>
+
+
+
+</div>

@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)] = "pinfo.prodid" placeholder="Product Id">
+  </mat-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)] = "pinfo.proddesc" placeholder="Description">
+  </mat-form-field><br>
+  <mat-form-field>
+    <input matInput [(ngModel)] ="pinfo.prodprice" placeholder="Price">
+  </mat-form-field><br>
+  <button mat-raise-button color="primary" (click)="saveproduct()">Save Product</button><br>
+  <mat-spinner color="primary" *ngIf="flag" ></mat-spinner>
+  <h2 style="font-size: large">{{msg}}</h2>
+
+  
+</mat-card>

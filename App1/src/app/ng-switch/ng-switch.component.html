@@ -1,0 +1,36 @@
+
+<div style="background-color: yellow;color: darkslategrey;font-size:large">
+
+  
+<br>
+<br>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; <select [(ngModel)] ="course">
+  <option value="">--Select Course--</option>
+  <option>MVC</option>
+  <option>Angular</option>
+</select>
+
+<div [ngSwitch] ="course">
+  <ul *ngSwitchCase="'MVC'">
+    <li>Partial Views </li>
+    <li>Web Api</li>
+  </ul>
+<ul *ngSwitchCase="'Angular'">
+  <li>Data Binding</li>
+  <li>Routing</li>
+  <li>Single Page Application </li>
+<span *ngSwitchDefault>
+  Select Course !
+</span>
+</ul>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+</div>

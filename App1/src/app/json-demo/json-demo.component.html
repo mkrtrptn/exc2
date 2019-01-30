@@ -1,0 +1,20 @@
+<h3>Faculty Name {{facultyinfo.name}}</h3>
+<h1>Courses :</h1>
+<ul *ngFor="let c of facultyinfo.courses" >
+<li>{{c}}</li>
+</ul>
+
+<table style="margin: 20px black;font-size:x-large; border:20px; padding: 5px; word-spacing: 5px" >
+  <tr>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Product Image</th>
+  </tr>
+  <tr *ngFor="let p of product" [ngStyle]="{'color':p.price>10000?'red':'green'}">
+    <td>{{p.id}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.price}}</td>
+    <td><img src="./assets/{{p.pic}}" height="70" width="70"></td>
+  </tr>
+</table>
